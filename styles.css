@@ -1,21 +1,39 @@
-.gif {
+body {
   width: 100%;
+  margin: auto;
 }
+
+.col-lg-4 {
+  padding: 0;
+  margin: auto;
+}
+
+.gif {
+  height: 320px;
+  width: auto;
+  max-width: 100%;
+
+}
+
 .card-body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .card {
   border-style: none;
-  background-color: rgb(0,0,0,0);
+  background-color: rgb(0, 0, 0, 0);
+  overflow: hidden;
 }
+
 h5 {
   margin-top: 0.5rem;
   margin-bottom: 0;
   text-align: center;
 }
+
 #search-form {
   width: 90%;
   display: flex;
@@ -25,10 +43,12 @@ h5 {
   justify-content: center;
 }
 
-#data-container, #button-container {
+#data-container,
+#button-container {
   width: 90%;
   margin: auto;
 }
+
 #button-container {
   display: flex;
   flex-direction: row;
@@ -42,16 +62,47 @@ h5 {
   border-color: purple;
   border-width: thin;
 }
+
 .topic-btn:hover {
-  
   background-color: purple;
   border-color: rgb(69, 0, 147);
 }
-@media only screen and (min-width: 580px) {
+
+
+
+@media only screen and (min-width: 600px) {
   #search-form {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 500px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (min-height: 700px) {
+  body {
+    width: 80%;
+  }
+  .gif {
+     height: 500px;
+  }
+}
+
+/* landscape phones */
+@media only screen and (max-height: 450px) {
+  .card {
+    height: 320px;
+    width: 360px;
+    margin: auto;
+  }
+
+  .gif {
+    height: 300px;
+  }
+}
+
 @media only screen and (min-width: 995px) {
   .row {
     height: 350px;
@@ -60,42 +111,50 @@ h5 {
   .gif {
     height: 250px;
   }
+
   body {
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0, 0, 0, 0.5);
   }
+
   #button-container {
     padding: 1.5rem 2rem;
   }
+
   .btn {
     font-size: 1.5rem;
   }
+
   #topic-input {
     font-size: 1.5rem;
     height: 3rem;
   }
+
   #search {
     font-size: 1.4rem;
   }
 
 }
+
 @media only screen and (min-width: 1100px) {
   body {
-    padding: 2rem 1rem; 
+    padding: 2rem 1rem;
   }
+
   .row {
     height: 400px;
   }
+
   .col-lg-4 {
     padding: 0;
   }
+
   .gif {
     height: 300px;
     width: auto;
     max-width: 100%;
   }
-  
-
 }
+
 @media only screen and (min-width: 1400px) {
   .row {
     height: 500px;
@@ -108,16 +167,19 @@ h5 {
   .btn {
     font-size: 2rem;
   }
+
   #topic-input {
     font-size: 2rem;
     height: 3.5rem;
   }
+
   #search {
     font-size: 1.8rem;
   }
+
   body {
-    background-color: rgb(0,0,0,0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     color: white;
   }
-  
+
 }
